@@ -1,14 +1,12 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-// Structure to create a node with data and the next pointer
 struct node {
     int info;
     struct node *ptr;
 }*top,*top1,*temp;
 
 int count = 0;
-// Push() operation on a  stack
 void push(int data) {
      if (top == NULL)
     {
@@ -45,7 +43,6 @@ int pop() {
 }
 
 void display() {
-    // Display the elements of the stack
     top1 = top;
  
     if (top1 == NULL)
